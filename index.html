@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC
+    "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>3 Columns, Equal Height</title>
+        <meta http-equiv="Content-Type"
+              content="application/xhtml+xml; charset=utf-8" />
+        <meta name="robots" content="index, follow" />
+        <style media="screen" type="text/css">
+            body {
+                margin: 0px;
+                padding: 0px;
+                border: 0px;
+                width: 100%;
+                background: red;
+                min-width: 1000px;
+                text-align: center;
+            }
+
+            #main {
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+            }
+
+            #outer-right {
+                position: relative;
+                clear: both;
+                float: left;
+                width: 100%;
+                overflow: hidden;
+                /* Right column bg color */
+                background: #FF9;
+            }
+
+            #outer-center {
+                float: left;
+                width: 200%;
+                /* Width of right column */
+                margin-left: -200px;
+                position: relative;
+                right: 100%;
+                /* Center column bg color */
+                background: #FFF;
+            }
+
+            #outer-left {
+                float: left;
+                width: 100%;
+                margin-left: -50%;
+                position: relative;
+                /* Left column width + right column width */
+                left: 400px;
+                /* Left column bg color */
+                background: #FFD8B7;
+            }
+
+            #col-center {
+                float: left;
+                width: 50%;
+                position: relative;
+                /* Width of left column */
+                right: 200px;
+                /* Center column bottom padding */
+                padding-bottom: 20px;
+            }
+
+            #col-center-inner {
+                /* Right column width + center right padding */
+                margin-right: 215px;
+                /* Width column width + center left padding */
+                margin-left: 215px;
+                position: relative;
+                left: 200%;
+                overflow: hidden;
+            }
+
+            #col-left {
+                float: left;
+                float: right;
+                /* Width of left column content */
+                /* (left column width minus left and right padding) */
+                width: 170px;
+                position: relative;
+                /* Width of the left-had side padding on the left column */
+                right: 15px;
+            }
+
+            #col-right {
+                float: left;
+                float: right;
+                /* Width of right column content */
+                /* (right column width minus left and right padding) */
+                width: 170px;
+                /* Width of right column right-hand padding + left */
+                /* column left and right padding */
+                margin-right: 45px;
+                position: relative;
+                left: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="outer-right">
+                <div id="outer-center">
+                    <div id="outer-left">
+                        <div id="col-center">
+                            <div id="col-center-inner">
+                                <h1>3 Columns, Equal Height</h1>
+                                <h2>Center</h2>
+                                <p>
+                                    This is just a stripped down, slightly
+                                    modified version of the demonstration by
+                                    Matthew James Taylor which can be found
+                                    <a href="http://matthewjamestaylor.com/blog/ultimate-3-column-holy-grail-pixels.htm">here</a>.
+                                </p>
+                                <p>
+                                    In addition to removing the header and
+                                    footer, I have also changed the layout
+                                    to use a fixed width outer container.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="col-left">
+                            <h2>Left</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In in hendrerit elit. Class
+                                aptent taciti sociosqu ad litora torquent per
+                                conubia nostra, per inceptos himenaeos. Mauris
+                                a ante odio. Ut mollis posuere dapibus. Proin
+                                at volutpat elit. Cras eget enim
+                                lorem, et interdum mauris. Lorem ipsum dolor
+                                sit amet, consectetur adipiscing elit. Morbi
+                                scelerisque, nulla ut convallis suscipit,
+                                turpis nisi molestie tellus, a consequat ante
+                                purus at magna. Morbi placerat commodo
+                                consectetur. Morbi turpis diam, laoreet sed
+                                tristique vel, suscipit eu nisi. Curabitur in
+                                tortor eros, a ornare elit.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In in hendrerit elit. Class
+                                aptent taciti sociosqu ad litora torquent per
+                                conubia nostra, per inceptos himenaeos. Mauris
+                                a ante odio. Ut mollis posuere dapibus. Proin
+                                at volutpat elit. Cras eget enim
+                                lorem, et interdum mauris. Lorem ipsum dolor
+                                sit amet, consectetur adipiscing elit. Morbi
+                                scelerisque, nulla ut convallis suscipit,
+                                turpis nisi molestie tellus, a consequat ante
+                                purus at magna. Morbi placerat commodo
+                                consectetur. Morbi turpis diam, laoreet sed
+                                tristique vel, suscipit eu nisi. Curabitur in
+                                tortor eros, a ornare elit.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In in hendrerit elit. Class
+                                aptent taciti sociosqu ad litora torquent per
+                                conubia nostra, per inceptos himenaeos. Mauris
+                                a ante odio. Ut mollis posuere dapibus. Proin
+                                at volutpat elit. Cras eget enim
+                                lorem, et interdum mauris. Lorem ipsum dolor
+                                sit amet, consectetur adipiscing elit. Morbi
+                                scelerisque, nulla ut convallis suscipit,
+                                turpis nisi molestie tellus, a consequat ante
+                                purus at magna. Morbi placerat commodo
+                                consectetur. Morbi turpis diam, laoreet sed
+                                tristique vel, suscipit eu nisi. Curabitur in
+                                tortor eros, a ornare elit.
+                            </p>
+                        </div>
+                        <div id="col-right">
+                            <h2>Right</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In in hendrerit elit. Class
+                                aptent taciti sociosqu ad litora torquent per
+                                conubia nostra, per inceptos himenaeos. Mauris
+                                a ante odio. Ut mollis posuere dapibus. Proin
+                                at volutpat elit. Cras eget enim
+                                lorem, et interdum mauris. Lorem ipsum dolor
+                                sit amet, consectetur adipiscing elit. Morbi
+                                scelerisque, nulla ut convallis suscipit,
+                                turpis nisi molestie tellus, a consequat ante
+                                purus at magna. Morbi placerat commodo
+                                consectetur. Morbi turpis diam, laoreet sed
+                                tristique vel, suscipit eu nisi. Curabitur in
+                                tortor eros, a ornare elit.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In in hendrerit elit. Class
+                                aptent taciti sociosqu ad litora torquent per
+                                conubia nostra, per inceptos himenaeos. Mauris
+                                a ante odio. Ut mollis posuere dapibus. Proin
+                                at volutpat elit. Cras eget enim
+                                lorem, et interdum mauris. Lorem ipsum dolor
+                                sit amet, consectetur adipiscing elit. Morbi
+                                scelerisque, nulla ut convallis suscipit,
+                                turpis nisi molestie tellus, a consequat ante
+                                purus at magna. Morbi placerat commodo
+                                consectetur. Morbi turpis diam, laoreet sed
+                                tristique vel, suscipit eu nisi. Curabitur in
+                                tortor eros, a ornare elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
